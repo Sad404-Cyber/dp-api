@@ -139,45 +139,10 @@ function emojiScraper(emoji) {
     }
     const getHtml = await fetch('https://emojipedia.org/search?q=' + encodeURI(emoji), optionsGet).then(rsp => rsp.text())
     const $ = cheerio.load(getHtml)
-    const Apple = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(0).attr('srcset').replace(/ 2x/gi, '')
-    const Google = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(1).attr('srcset').replace(/ 2x/gi, '')
-    const Samsung = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(2).attr('srcset').replace(/ 2x/gi, '')
-    const Microsoft = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(3).attr('srcset').replace(/ 2x/gi, '')
-    const WhatsApp = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(4).attr('srcset').replace(/ 2x/gi, '')
-    const Twitter = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(5).attr('srcset').replace(/ 2x/gi, '')
-    const Skype = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(6).attr('srcset').replace(/ 2x/gi, '')
-    const JoyPixels = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(7).attr('srcset').replace(/ 2x/gi, '')
-    const OpenMoji = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(8).attr('srcset').replace(/ 2x/gi, '')
-    const emojidex = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(9).attr('srcset').replace(/ 2x/gi, '')
-    const Messager = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(10).attr('srcset').replace(/ 2x/gi, '')
-    const LG = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(11).attr('srcset').replace(/ 2x/gi, '')
-    const HTC = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(12).attr('srcset').replace(/ 2x/gi, '')
-    const Mozilla = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(13).attr('srcset').replace(/ 2x/gi, '')
-    const SoftBank = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(14).attr('srcset').replace(/ 2x/gi, '')
-    const Docomo = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(15).attr('srcset').replace(/ 2x/gi, '')
-    const au_by_KDDI = $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(16).attr('srcset').replace(/ 2x/gi, '')
     resolve({
       status: true,
       message: 'By DappaUhuy',
-      result: {
-        Apple,
-        Google,
-        Samsung,
-        Microsoft,
-        WhatsApp,
-        Twitter,
-        Skype,
-        JoyPixels,
-        OpenMoji,
-        emojidex,
-        Messager,
-        LG,
-        HTC,
-        Mozilla,
-        SoftBank,
-        Docomo,
-        au_by_KDDI
-      }
+      result: $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(0).attr('srcset').replace(/ 2x/gi, '')
     })
   })
 }
