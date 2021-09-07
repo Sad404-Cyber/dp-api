@@ -35,9 +35,42 @@ dp.tiktokDown(url)
 ## ```Instagram Downloader```
 ```
 const dp = require('dp-api')
-const url = 'https://www.instagram.com/p/CTErs6vsJKd/'
+const url = 'https://www.instagram.com/p/CTe8inKLUhw/?utm_source=ig_web_copy_link'
 
 dp.igDownload(url)
+.then((data) => {
+  console.log(data)
+})
+```
+
+## ```Instagram Downloader 2```
+```
+const dp = require('dp-api')
+const url = 'https://www.instagram.com/p/CTe8inKLUhw/?utm_source=ig_web_copy_link'
+
+dp.igDownload2(url)
+.then((data) => {
+  console.log(data)
+})
+```
+
+## ```Instagram Stalker```
+```
+const dp = require('dp-api')
+const username = 'scytfdhd_'
+
+dp.igStalk(username)
+.then((data) => {
+  console.log(data)
+})
+```
+
+## ```Instagram Story```
+```
+const dp = require('dp-api')
+const username = 'jessicajane99'
+
+dp.igStory(username)
 .then((data) => {
   console.log(data)
 })
@@ -133,9 +166,8 @@ dp.tebakGambar()
 ```
 const dp = require('dp-api')
 const produk = 'tempe'
-const page = 1
 
-dp.muiHalal(produk, page)
+dp.muiHalal(produk)
 .then((data) => {
   console.log(data)
 })
