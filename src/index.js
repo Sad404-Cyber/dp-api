@@ -311,7 +311,7 @@ function emojiScraper(emoji) {
       const $ = cheerio.load(data)
       resolve({
         status: true,
-        message: 'By DappaUhuy',
+        message: 'By Hafidz Abdillah',
         result: $('section.vendor-list > ul > li').find('div.vendor-image > img').eq(0).attr('srcset').replace(/ 2x/gi, '')
       })
     })
