@@ -1,7 +1,7 @@
 {
-  "name": "dp-api",
+  "name": "su-api",
   "version": "1.0.2",
-  "description": "dp-api",
+  "description": "su-api",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
