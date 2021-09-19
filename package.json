@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dappauhuy/dp-api.git"
+    "url": "git+https://github.com/Sad404-Cyber/su-api.git"
   },
   "keywords": [
     "api",
@@ -17,9 +17,9 @@
   "author": "DappaUhuy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dappauhuy/dp-api/issues"
+    "url": "https://github.com/Sad404-Cyber/su-api/issues"
   },
-  "homepage": "https://github.com/dappauhuy/dp-api#readme",
+  "homepage": "https://github.com/Sad404-Cyber/su-api#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.10",
     "form-data": "^4.0.0",
