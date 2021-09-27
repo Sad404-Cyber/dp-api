@@ -1,5 +1,5 @@
 {
-  "name": "dp-api",
+  "name": "com-api",
   "version": "1.0.2",
   "description": "su-api",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "api",
     "module"
   ],
-  "author": "DappaUhuy",
+  "author": "Hafidz Abdillah",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Sad404-Cyber/su-api/issues"
